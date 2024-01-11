@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 01</title>
+
+    <style>
+      body {
+        margin: 0rem;
+        padding: 0rem;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        width: 22rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input {
+        margin-bottom: 0.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Formulário de Cadastro</h1>
+
+      <label for="nome">Nome</label>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        required
+        placeholder="Nome Completo"
+      />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="seuemail@aqui.com.br"
+      />
+
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" required />
+
+      <button type="submit">Enviar</button>
+    </section>
+  </body>
+</html>
