@@ -1,0 +1,11 @@
+.elemento {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.linha-colorida {
+    text-decoration: line-through;
+    color: lightgreen;
+    background-color: green;
+}
