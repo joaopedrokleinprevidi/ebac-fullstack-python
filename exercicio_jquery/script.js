@@ -1,20 +1,30 @@
-
-
+let gerarAtributoAleatorio = '';
+let atributosExistentes = []
 
 $(document).ready(function(){
     $("#buttonCadastrar").click(function(){
         const nomeDaTarefa = $('#inputNomeDaTarefa').val();
 
-        const listaDeTarefa = $(`<div class="elemento"> <li>${nomeDaTarefa}</li> </div>`);
+        if(nomeDaTarefa == ''){
+            return;
+        }else {
 
+        do {
+            gerarAtributoAleatorio = Number(Math.floor(Math.random() * 10001));
+        } while (atributosExistentes.includes(gerarAtributoAleatorio));
+        atributosExistentes = atributosExistentes + gerarAtributoAleatorio
+
+        const listaDeTarefa = $(`<li class="elemento" data-i="${gerarAtributoAleatorio}"> ${nomeDaTarefa}</li>`);
+        gerarAtributoAleatorio = '';
 
         $("#listaDeTarefas").append(listaDeTarefa);
-
         $('#inputNomeDaTarefa').val('');
+        }
     })
-})
 
-
-$('#listaDeTarefas').click(function(){
+$('#listaDeTarefas').on('click', '.elemento', function(){
+    const pegarAtributo = $(this).data('i');
     $(this).toggleClass('linha-colorida');
 });
+
+})
