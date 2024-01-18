@@ -1,0 +1,1 @@
+{"version":3,"file":"script.js","names":["document","querySelector","addEventListener","alert"],"sources":["script.js"],"mappings":"AAAAA,SAASC,cAAc,oBAAoBC,iBAAiB,SAAS,KACjEC,MAAM,iCAAiC","sourcesContent":["document.querySelector('#buttonExercicio').addEventListener('click', () => {\r\n    alert(\"Olá! Testado com sucesso! Hihi\");\r\n    \r\n})\r\n"]}
