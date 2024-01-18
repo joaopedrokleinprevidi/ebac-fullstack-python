@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body button {
+  color: aquamarine;
+  background-color: #2d9999;
+  border: 1px solid aquamarine;
+  cursor: pointer;
+  padding: 3rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
