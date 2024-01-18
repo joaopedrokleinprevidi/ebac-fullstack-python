@@ -14,7 +14,6 @@ body header {
   left: 0;
 }
 body header .container {
-  background-color: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
